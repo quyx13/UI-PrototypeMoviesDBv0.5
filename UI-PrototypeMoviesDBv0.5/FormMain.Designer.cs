@@ -75,8 +75,10 @@ namespace UI_PrototypeMoviesDBv0._5
             // 
             // quitToolStripMenuItem
             // 
+            this.quitToolStripMenuItem.Image = global::UI_PrototypeMoviesDBv0._5.Properties.Resources.exit16;
+            this.quitToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.quitToolStripMenuItem.Name = "quitToolStripMenuItem";
-            this.quitToolStripMenuItem.Size = new System.Drawing.Size(97, 22);
+            this.quitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.quitToolStripMenuItem.Text = "Quit";
             // 
             // aboutToolStripMenuItem
@@ -89,8 +91,10 @@ namespace UI_PrototypeMoviesDBv0._5
             // 
             // infoToolStripMenuItem
             // 
+            this.infoToolStripMenuItem.Image = global::UI_PrototypeMoviesDBv0._5.Properties.Resources.info16;
+            this.infoToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.infoToolStripMenuItem.Name = "infoToolStripMenuItem";
-            this.infoToolStripMenuItem.Size = new System.Drawing.Size(95, 22);
+            this.infoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.infoToolStripMenuItem.Text = "Info";
             // 
             // tableLayoutPanel1
