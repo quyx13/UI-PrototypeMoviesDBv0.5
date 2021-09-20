@@ -28,7 +28,7 @@ namespace UI_PrototypeMoviesDBv0._5
 
         private void quitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
 
         private void infoToolStripMenuItem_Click(object sender, EventArgs e)
