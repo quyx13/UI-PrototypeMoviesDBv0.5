@@ -81,6 +81,7 @@ namespace UI_PrototypeMoviesDBv0._5
             this.quitToolStripMenuItem.Name = "quitToolStripMenuItem";
             this.quitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.quitToolStripMenuItem.Text = "Quit";
+            this.quitToolStripMenuItem.Click += new System.EventHandler(this.quitToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 
@@ -97,6 +98,7 @@ namespace UI_PrototypeMoviesDBv0._5
             this.infoToolStripMenuItem.Name = "infoToolStripMenuItem";
             this.infoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.infoToolStripMenuItem.Text = "Info";
+            this.infoToolStripMenuItem.Click += new System.EventHandler(this.infoToolStripMenuItem_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -154,6 +156,7 @@ namespace UI_PrototypeMoviesDBv0._5
             this.buttonStart.Text = "Start";
             this.buttonStart.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonStart.UseVisualStyleBackColor = true;
+            this.buttonStart.Click += new System.EventHandler(this.buttonStart_Click);
             // 
             // buttonSettings
             // 
@@ -168,6 +171,7 @@ namespace UI_PrototypeMoviesDBv0._5
             this.buttonSettings.Text = "Settings";
             this.buttonSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonSettings.UseVisualStyleBackColor = true;
+            this.buttonSettings.Click += new System.EventHandler(this.buttonSettings_Click);
             // 
             // comboBoxModule
             // 
@@ -275,6 +279,9 @@ namespace UI_PrototypeMoviesDBv0._5
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UI-PrototypeMoviesDBv0.5";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormMain_FormClosed);
+            this.Load += new System.EventHandler(this.FormMain_Load);
+            this.Shown += new System.EventHandler(this.FormMain_Shown);
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
