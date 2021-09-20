@@ -116,8 +116,8 @@ namespace UI_PrototypeMoviesDBv0._5
             this.tableLayoutPanel2.AutoSize = true;
             this.tableLayoutPanel2.BackColor = System.Drawing.SystemColors.Control;
             this.tableLayoutPanel2.ColumnCount = 4;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 70F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 70F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 300F));
             this.tableLayoutPanel2.Controls.Add(this.buttonStart, 0, 0);
@@ -128,7 +128,7 @@ namespace UI_PrototypeMoviesDBv0._5
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(698, 23);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(698, 25);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // buttonStart
@@ -136,23 +136,32 @@ namespace UI_PrototypeMoviesDBv0._5
             this.buttonStart.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonStart.AutoSize = true;
+            this.buttonStart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonStart.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonStart.Image = global::UI_PrototypeMoviesDBv0._5.Properties.Resources.play16;
+            this.buttonStart.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.buttonStart.Location = new System.Drawing.Point(0, 0);
             this.buttonStart.Margin = new System.Windows.Forms.Padding(0);
             this.buttonStart.Name = "buttonStart";
-            this.buttonStart.Size = new System.Drawing.Size(70, 23);
+            this.buttonStart.Size = new System.Drawing.Size(70, 25);
             this.buttonStart.TabIndex = 0;
             this.buttonStart.Text = "Start";
+            this.buttonStart.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonStart.UseVisualStyleBackColor = true;
             // 
             // buttonSettings
             // 
+            this.buttonSettings.AutoSize = true;
+            this.buttonSettings.Image = global::UI_PrototypeMoviesDBv0._5.Properties.Resources.settings16;
+            this.buttonSettings.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.buttonSettings.Location = new System.Drawing.Point(70, 0);
             this.buttonSettings.Margin = new System.Windows.Forms.Padding(0);
             this.buttonSettings.Name = "buttonSettings";
-            this.buttonSettings.Size = new System.Drawing.Size(70, 23);
+            this.buttonSettings.Size = new System.Drawing.Size(75, 25);
             this.buttonSettings.TabIndex = 1;
             this.buttonSettings.Text = "Settings";
+            this.buttonSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonSettings.UseVisualStyleBackColor = true;
             // 
             // comboBoxModule
@@ -169,7 +178,7 @@ namespace UI_PrototypeMoviesDBv0._5
             // textBox
             // 
             this.textBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox.Location = new System.Drawing.Point(3, 29);
+            this.textBox.Location = new System.Drawing.Point(3, 31);
             this.textBox.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
             this.textBox.Multiline = true;
             this.textBox.Name = "textBox";
@@ -265,6 +274,7 @@ namespace UI_PrototypeMoviesDBv0._5
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
             this.statusStrip.ResumeLayout(false);
             this.statusStrip.PerformLayout();
             this.ResumeLayout(false);
