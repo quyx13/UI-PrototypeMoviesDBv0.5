@@ -9,16 +9,16 @@ namespace UI_PrototypeMoviesDBv0._5
         public FormMain()
         {
             InitializeComponent();
-        }        
-
-        private void FormMain_Shown(object sender, EventArgs e)
-        {
-            Trace.WriteLine("Shown");
-        }        
+        }
 
         private void FormMain_Load(object sender, EventArgs e)
         {
             Trace.WriteLine("Load");
+        }
+
+        private void FormMain_Shown(object sender, EventArgs e)
+        {
+            Trace.WriteLine("Shown");
         }
 
         private void FormMain_FormClosed(object sender, FormClosedEventArgs e)
