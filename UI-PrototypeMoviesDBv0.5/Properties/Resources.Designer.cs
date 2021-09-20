@@ -63,6 +63,26 @@ namespace UI_PrototypeMoviesDBv0._5.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap accept16 {
+            get {
+                object obj = ResourceManager.GetObject("accept16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cancel16 {
+            get {
+                object obj = ResourceManager.GetObject("cancel16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap exit16 {
             get {
                 object obj = ResourceManager.GetObject("exit16", resourceCulture);
