@@ -7,6 +7,16 @@ namespace UI_PrototypeMoviesDBv0._5
 {
     public partial class FormMain : Form
     {
+        //new Thread(DoWork).Start();
+        // TODO:String-Verarbeitung und DB-Work in getrennte Threads
+        // TODO:Bestätigungen per ShowDialog
+        // TODO:Konvertierung TSV zu XML und XML zu TSV (für movies.tsv)
+        // TODO:Custom-Dialog für Settings
+        // TODO:automatische Logs
+        // TODO:Selenium-Downloader einfügen
+        // TODO:Downloader prüft auf vollständige Datei
+        // TODO:HTMLs von Imdb auswählen, Downloader soll dann erst alle HTMLs des Films laden, dann weitergehen
+
         private Worker worker;
 
         public FormMain()
@@ -16,26 +26,16 @@ namespace UI_PrototypeMoviesDBv0._5
             var controls = new Dictionary<string, Object>();
             controls.Add("buttonStart", buttonStart);
             controls.Add("buttonSettings", buttonSettings);
-            controls.Add("comboBoxModule", comboBoxModule);
+            controls.Add("comboBoxModule", comboBox);
             controls.Add("textBox", textBox);
             controls.Add("statusLabelStopWatch", statusLabelStopWatch);
             controls.Add("statusLabelTask", statusLabelTask);
-            controls.Add("statusProgressBar", statusProgressBar);
-            controls.Add("statusLabelPercent", statusLabelPercent);
+            controls.Add("statusLabelPercent", statusLabelPercentage);
             controls.Add("statusLabelInfo", statusLabelInfo);
+            controls.Add("statusProgressBar", statusProgressBar);
 
             worker = new Worker(controls);
-            worker.CreateControl();
-
-            //new Thread(DoWork).Start();
-            // TODO:String-Verarbeitung und DB-Work in getrennte Threads
-            // TODO:Bestätigungen per ShowDialog
-            // TODO:Konvertierung TSV zu XML und XML zu TSV (für movies.tsv)
-            // TODO:Custom-Dialog für Settings
-            // TODO:automatische Logs
-            // TODO:Selenium-Downloader einfügen
-            // TODO:Downloader prüft auf vollständige Datei
-            // TODO:HTMLs von Imdb auswählen, Downloader soll dann erst alle HTMLs des Films laden, dann weitergehen
+            worker.CreateControl();            
         }
 
         private void FormMain_Load(object sender, EventArgs e)
@@ -48,7 +48,7 @@ namespace UI_PrototypeMoviesDBv0._5
 
             statusLabelStopWatch.Text = "Ready";
             statusLabelTask.Text = "";
-            statusLabelPercent.Text = "";
+            statusLabelPercentage.Text = "";
             statusLabelInfo.Text = "";
         }
 
@@ -79,7 +79,12 @@ namespace UI_PrototypeMoviesDBv0._5
 
         private void buttonSettings_Click(object sender, EventArgs e)
         {
+            // TODO:Settings-Dialog
 
+            //using (var formSettings = new FormSettings())
+            //{
+            //    formSettings.ShowDialog(this);
+            //}
         }
     }
 }

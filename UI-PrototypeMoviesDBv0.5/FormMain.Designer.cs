@@ -39,13 +39,13 @@ namespace UI_PrototypeMoviesDBv0._5
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.buttonStart = new System.Windows.Forms.Button();
             this.buttonSettings = new System.Windows.Forms.Button();
-            this.comboBoxModule = new System.Windows.Forms.ComboBox();
+            this.comboBox = new System.Windows.Forms.ComboBox();
             this.textBox = new System.Windows.Forms.TextBox();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.statusLabelStopWatch = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusLabelTask = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusProgressBar = new System.Windows.Forms.ToolStripProgressBar();
-            this.statusLabelPercent = new System.Windows.Forms.ToolStripStatusLabel();
+            this.statusLabelPercentage = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusLabelInfo = new System.Windows.Forms.ToolStripStatusLabel();
             this.menuStrip.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -129,7 +129,7 @@ namespace UI_PrototypeMoviesDBv0._5
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 300F));
             this.tableLayoutPanel2.Controls.Add(this.buttonStart, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.buttonSettings, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.comboBoxModule, 3, 0);
+            this.tableLayoutPanel2.Controls.Add(this.comboBox, 3, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -173,16 +173,16 @@ namespace UI_PrototypeMoviesDBv0._5
             this.buttonSettings.UseVisualStyleBackColor = true;
             this.buttonSettings.Click += new System.EventHandler(this.buttonSettings_Click);
             // 
-            // comboBoxModule
+            // comboBox
             // 
-            this.comboBoxModule.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBoxModule.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxModule.FormattingEnabled = true;
-            this.comboBoxModule.Location = new System.Drawing.Point(398, 0);
-            this.comboBoxModule.Margin = new System.Windows.Forms.Padding(0);
-            this.comboBoxModule.Name = "comboBoxModule";
-            this.comboBoxModule.Size = new System.Drawing.Size(300, 23);
-            this.comboBoxModule.TabIndex = 2;
+            this.comboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox.FormattingEnabled = true;
+            this.comboBox.Location = new System.Drawing.Point(398, 0);
+            this.comboBox.Margin = new System.Windows.Forms.Padding(0);
+            this.comboBox.Name = "comboBox";
+            this.comboBox.Size = new System.Drawing.Size(300, 23);
+            this.comboBox.TabIndex = 2;
             // 
             // textBox
             // 
@@ -202,7 +202,7 @@ namespace UI_PrototypeMoviesDBv0._5
             this.statusLabelStopWatch,
             this.statusLabelTask,
             this.statusProgressBar,
-            this.statusLabelPercent,
+            this.statusLabelPercentage,
             this.statusLabelInfo});
             this.statusStrip.Location = new System.Drawing.Point(0, 477);
             this.statusStrip.Name = "statusStrip";
@@ -240,17 +240,17 @@ namespace UI_PrototypeMoviesDBv0._5
             this.statusProgressBar.Name = "statusProgressBar";
             this.statusProgressBar.Size = new System.Drawing.Size(100, 18);
             // 
-            // statusLabelPercent
+            // statusLabelPercentage
             // 
-            this.statusLabelPercent.AutoSize = false;
-            this.statusLabelPercent.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top) 
+            this.statusLabelPercentage.AutoSize = false;
+            this.statusLabelPercentage.BorderSides = ((System.Windows.Forms.ToolStripStatusLabelBorderSides)((((System.Windows.Forms.ToolStripStatusLabelBorderSides.Left | System.Windows.Forms.ToolStripStatusLabelBorderSides.Top) 
             | System.Windows.Forms.ToolStripStatusLabelBorderSides.Right) 
             | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
-            this.statusLabelPercent.BorderStyle = System.Windows.Forms.Border3DStyle.Sunken;
-            this.statusLabelPercent.Name = "statusLabelPercent";
-            this.statusLabelPercent.Size = new System.Drawing.Size(54, 19);
-            this.statusLabelPercent.Text = "100,00%";
-            this.statusLabelPercent.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.statusLabelPercentage.BorderStyle = System.Windows.Forms.Border3DStyle.Sunken;
+            this.statusLabelPercentage.Name = "statusLabelPercentage";
+            this.statusLabelPercentage.Size = new System.Drawing.Size(54, 19);
+            this.statusLabelPercentage.Text = "100,00%";
+            this.statusLabelPercentage.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // statusLabelInfo
             // 
@@ -303,7 +303,7 @@ namespace UI_PrototypeMoviesDBv0._5
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Button buttonStart;
         private System.Windows.Forms.Button buttonSettings;
-        private System.Windows.Forms.ComboBox comboBoxModule;
+        private System.Windows.Forms.ComboBox comboBox;
         private System.Windows.Forms.StatusStrip statusStrip;
         private System.Windows.Forms.TextBox textBox;
         private System.Windows.Forms.ToolStripMenuItem quitToolStripMenuItem;
@@ -312,7 +312,7 @@ namespace UI_PrototypeMoviesDBv0._5
         private System.Windows.Forms.ToolStripStatusLabel statusLabelStopWatch;
         private System.Windows.Forms.ToolStripStatusLabel statusLabelTask;
         private System.Windows.Forms.ToolStripProgressBar statusProgressBar;
-        private System.Windows.Forms.ToolStripStatusLabel statusLabelPercent;
+        private System.Windows.Forms.ToolStripStatusLabel statusLabelPercentage;
         private System.Windows.Forms.ToolStripStatusLabel statusLabelInfo;
     }
 }
