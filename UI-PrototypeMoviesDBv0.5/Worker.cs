@@ -93,13 +93,13 @@ namespace UI_PrototypeMoviesDBv0._5
             if (i > 0)
             {
                 var timeLeft = TimeSpan.FromMilliseconds((number - i) * ((int)timeSpan.TotalMilliseconds / i));
-                this.Invoke(new Action(() => statusLabelStopWatch.Text = $"{timeSpan.Hours:D2}:{timeSpan.Minutes:D2}:" +
-                $"{timeSpan.Seconds:D2} (left: {timeLeft.Hours:D2}:{timeLeft.Minutes:D2}:{timeLeft.Seconds:D2})"));
+                this.Invoke(new Action(() => statusLabelStopWatch.Text = $"{timeSpan.Hours:D2}h:{timeSpan.Minutes:D2}m:" +
+                $"{timeSpan.Seconds:D2}s (remaining: {timeLeft.Hours:D2}h:{timeLeft.Minutes:D2}m:{timeLeft.Seconds:D2}s)"));
             }
             else
             {
-                this.Invoke(new Action(() => statusLabelStopWatch.Text = $"{timeSpan.Hours:D2}:{timeSpan.Minutes:D2}:" +
-                $"{timeSpan.Seconds:D2} (left: ZZ:ZZ:ZZ)"));
+                this.Invoke(new Action(() => statusLabelStopWatch.Text = $"{timeSpan.Hours:D2}h:{timeSpan.Minutes:D2}m:" +
+                $"{timeSpan.Seconds:D2}s (remaining: XXh:XXm:XXs)"));
             }
         }
 
@@ -122,7 +122,7 @@ namespace UI_PrototypeMoviesDBv0._5
                         UpdateTextBox((i + 1).ToString());
                     UpdateLabelTask($"{string.Format("{0:0,0}", (i + 1))} of {string.Format("{0:0,0}", (number))}");
                     UpdateProgressbar();
-                    UpdateLabelPercentage($"{(i / numberDouble * 100):F1}" + "%");
+                    UpdateLabelPercentage($"{(i / numberDouble * 100):F2}" + "%");
                     UpdateLabelStopWatch(i, timer.Elapsed);
 
                     i++;
