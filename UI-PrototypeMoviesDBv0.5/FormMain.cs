@@ -78,7 +78,7 @@ namespace UI_PrototypeMoviesDBv0._5
             if (worker.run)
             {
                 worker.run = false;
-                statusLabelInfo.Text = "STOPPED";
+                statusLabelInfo.Text = "Stopped";
                 buttonStart.Text = "Start";
                 buttonStart.Image = Resources.play16;
                 buttonSettings.Enabled = true;
