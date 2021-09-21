@@ -27,11 +27,11 @@ namespace UI_PrototypeMoviesDBv0._5
             var controls = new Dictionary<string, Object>();
             controls.Add("buttonStart", buttonStart);
             controls.Add("buttonSettings", buttonSettings);
-            controls.Add("comboBoxModule", comboBox);
+            controls.Add("comboBox", comboBox);
             controls.Add("textBox", textBox);
             controls.Add("statusLabelStopWatch", statusLabelStopWatch);
             controls.Add("statusLabelTask", statusLabelTask);
-            controls.Add("statusLabelPercent", statusLabelPercentage);
+            controls.Add("statusLabelPercentage", statusLabelPercentage);
             controls.Add("statusLabelInfo", statusLabelInfo);
             controls.Add("statusProgressBar", statusProgressBar);
 

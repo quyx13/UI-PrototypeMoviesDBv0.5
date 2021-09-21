@@ -7,8 +7,8 @@ namespace UI_PrototypeMoviesDBv0._5
 {
     public class Worker : Control
     {
-        private Button btnStart;
-        private Button btnSettings;
+        private Button buttonStart;
+        private Button buttonSettings;
         private ComboBox comboBox;
         private TextBox textBox;
         private Label statusLabelStopWatch;
@@ -24,13 +24,13 @@ namespace UI_PrototypeMoviesDBv0._5
 
         public Worker(Dictionary<string, Object> controls)
         {
-            this.btnStart = (Button)controls["btnStart"];
-            this.btnSettings = (Button)controls["btnSettings"];
+            this.buttonStart = (Button)controls["buttonStart"];
+            this.buttonSettings = (Button)controls["buttonSettings"];
             this.comboBox = (ComboBox)controls["comboBox"];
             this.textBox = (TextBox)controls["textBox"];
             this.statusLabelStopWatch = (Label)controls["statusLabelStopWatch"];
             this.statusLabelTask = (Label)controls["statusLabelTask"];
-            this.statusLabelPercentage = (Label)controls["statusLabelPercent"];
+            this.statusLabelPercentage = (Label)controls["statusLabelPercentage"];
             this.statusLabelInfo = (Label)controls["statusLabelInfo"];
             this.statusProgressBar = (ProgressBar)controls["statusProgressBar"];
         }
@@ -44,8 +44,8 @@ namespace UI_PrototypeMoviesDBv0._5
 
         private void UpdateButtons(string text, bool isEnabled)
         {
-            this.Invoke(new Action(() => btnStart.Text = text));
-            this.Invoke(new Action(() => btnSettings.Enabled = isEnabled));
+            this.Invoke(new Action(() => buttonStart.Text = text));
+            this.Invoke(new Action(() => buttonSettings.Enabled = isEnabled));
         }
 
         private void UpdateComboBox(bool isEnabled)
