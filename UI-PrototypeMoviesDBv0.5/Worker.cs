@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Drawing;
 using System.Windows.Forms;
+using UI_PrototypeMoviesDBv0._5.Properties;
 
 namespace UI_PrototypeMoviesDBv0._5
 {
@@ -42,10 +44,11 @@ namespace UI_PrototypeMoviesDBv0._5
             statusProgressBar.Maximum = number;
         }
 
-        private void UpdateButtons(string text, bool isEnabled)
+        private void UpdateButtons(string text, bool isEnabled, Image image)
         {
             this.Invoke(new Action(() => buttonStart.Text = text));
-            this.Invoke(new Action(() => buttonSettings.Enabled = isEnabled));
+            this.Invoke(new Action(() => buttonStart.Image = image));
+            this.Invoke(new Action(() => buttonSettings.Enabled = isEnabled));            
         }
 
         private void UpdateComboBox(bool isEnabled)
@@ -105,7 +108,7 @@ namespace UI_PrototypeMoviesDBv0._5
             var timer = new Stopwatch();
             timer.Start();
 
-            UpdateButtons("Stop", false);
+            UpdateButtons("Stop", false, Resources.pause16);
             UpdateComboBox(false);
             UpdateLabelInfo("Running");
             run = true;
@@ -131,7 +134,7 @@ namespace UI_PrototypeMoviesDBv0._5
                 }
             }
 
-            UpdateButtons("Start", true);
+            UpdateButtons("Start", true, Resources.play16);
             UpdateComboBox(true);
             UpdateLabelInfo("Done");
             run = false;

@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Drawing;
 using System.Threading;
 using System.Windows.Forms;
+using UI_PrototypeMoviesDBv0._5.Properties;
 
 namespace UI_PrototypeMoviesDBv0._5
 {
@@ -80,6 +82,7 @@ namespace UI_PrototypeMoviesDBv0._5
                 worker.run = false;
                 statusLabelInfo.Text = "STOPPED";
                 buttonStart.Text = "Start";
+                buttonStart.Image = Resources.play16;
                 buttonSettings.Enabled = true;
                 comboBox.Enabled = false;
             }

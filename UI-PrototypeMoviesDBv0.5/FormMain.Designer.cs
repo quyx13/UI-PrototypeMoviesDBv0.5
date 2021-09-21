@@ -259,7 +259,7 @@ namespace UI_PrototypeMoviesDBv0._5
             | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
             this.statusLabelInfo.BorderStyle = System.Windows.Forms.Border3DStyle.Sunken;
             this.statusLabelInfo.Name = "statusLabelInfo";
-            this.statusLabelInfo.Size = new System.Drawing.Size(160, 19);
+            this.statusLabelInfo.Size = new System.Drawing.Size(191, 19);
             this.statusLabelInfo.Spring = true;
             this.statusLabelInfo.Text = "statusLabelInfo";
             this.statusLabelInfo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;

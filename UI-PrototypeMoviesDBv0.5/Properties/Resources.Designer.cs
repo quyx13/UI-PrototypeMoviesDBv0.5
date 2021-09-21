@@ -113,6 +113,16 @@ namespace UI_PrototypeMoviesDBv0._5.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pause16 {
+            get {
+                object obj = ResourceManager.GetObject("pause16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap play16 {
             get {
                 object obj = ResourceManager.GetObject("play16", resourceCulture);
@@ -126,6 +136,16 @@ namespace UI_PrototypeMoviesDBv0._5.Properties {
         internal static System.Drawing.Bitmap settings16 {
             get {
                 object obj = ResourceManager.GetObject("settings16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap stop16 {
+            get {
+                object obj = ResourceManager.GetObject("stop16", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
