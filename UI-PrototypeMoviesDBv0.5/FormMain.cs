@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace UI_PrototypeMoviesDBv0._5
@@ -74,7 +75,24 @@ namespace UI_PrototypeMoviesDBv0._5
 
         private void buttonStart_Click(object sender, EventArgs e)
         {
+            if (worker.run)
+            {
+                worker.run = false;
+                statusLabelInfo.Text = "STOPPED";
+                buttonStart.Text = "Start";
+                buttonSettings.Enabled = true;
+                comboBox.Enabled = false;
+            }
+            else
+            {
+                textBox.Text = "";
+                statusProgressBar.Value = 0;
+                statusLabelPercentage.Text = "";
 
+                worker.SetNumber(10400);
+                var worker2Thread = new Thread(worker.DoWork);
+                worker2Thread.Start();
+            }
         }
 
         private void buttonSettings_Click(object sender, EventArgs e)
