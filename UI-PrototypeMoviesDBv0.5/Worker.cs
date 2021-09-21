@@ -11,10 +11,10 @@ namespace UI_PrototypeMoviesDBv0._5
         private Button buttonSettings;
         private ComboBox comboBox;
         private TextBox textBox;
-        private Label statusLabelStopWatch;
-        private Label statusLabelTask;
-        private Label statusLabelPercentage;
-        private Label statusLabelInfo;
+        private ToolStripStatusLabel statusLabelStopWatch;
+        private ToolStripStatusLabel statusLabelTask;
+        private ToolStripStatusLabel statusLabelPercentage;
+        private ToolStripStatusLabel statusLabelInfo;
         private ProgressBar statusProgressBar;
 
         private int number = 0;
@@ -28,10 +28,10 @@ namespace UI_PrototypeMoviesDBv0._5
             this.buttonSettings = (Button)controls["buttonSettings"];
             this.comboBox = (ComboBox)controls["comboBox"];
             this.textBox = (TextBox)controls["textBox"];
-            this.statusLabelStopWatch = (Label)controls["statusLabelStopWatch"];
-            this.statusLabelTask = (Label)controls["statusLabelTask"];
-            this.statusLabelPercentage = (Label)controls["statusLabelPercentage"];
-            this.statusLabelInfo = (Label)controls["statusLabelInfo"];
+            this.statusLabelStopWatch = (ToolStripStatusLabel)controls["statusLabelStopWatch"];
+            this.statusLabelTask = (ToolStripStatusLabel)controls["statusLabelTask"];
+            this.statusLabelPercentage = (ToolStripStatusLabel)controls["statusLabelPercentage"];
+            this.statusLabelInfo = (ToolStripStatusLabel)controls["statusLabelInfo"];
             this.statusProgressBar = (ProgressBar)controls["statusProgressBar"];
         }
 
