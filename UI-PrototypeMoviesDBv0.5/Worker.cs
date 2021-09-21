@@ -122,7 +122,7 @@ namespace UI_PrototypeMoviesDBv0._5
                         UpdateTextBox((i + 1).ToString());
                     UpdateLabelTask($"{string.Format("{0:0,0}", (i + 1))} of {string.Format("{0:0,0}", (number))}");
                     UpdateProgressbar();
-                    UpdateLabelPercentage($"{(i / numberDouble * 100):F2}" + "%");
+                    UpdateLabelPercentage($"{((i + 1) / numberDouble * 100):F2}" + "%");
                     UpdateLabelStopWatch(i, timer.Elapsed);
 
                     i++;
