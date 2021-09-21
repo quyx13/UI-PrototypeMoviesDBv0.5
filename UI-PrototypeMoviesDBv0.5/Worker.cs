@@ -15,7 +15,7 @@ namespace UI_PrototypeMoviesDBv0._5
         private ToolStripStatusLabel statusLabelTask;
         private ToolStripStatusLabel statusLabelPercentage;
         private ToolStripStatusLabel statusLabelInfo;
-        private ProgressBar statusProgressBar;
+        private ToolStripProgressBar statusProgressBar;
 
         private int number = 0;
         private double numberDouble = (double)0;
@@ -32,7 +32,7 @@ namespace UI_PrototypeMoviesDBv0._5
             this.statusLabelTask = (ToolStripStatusLabel)controls["statusLabelTask"];
             this.statusLabelPercentage = (ToolStripStatusLabel)controls["statusLabelPercentage"];
             this.statusLabelInfo = (ToolStripStatusLabel)controls["statusLabelInfo"];
-            this.statusProgressBar = (ProgressBar)controls["statusProgressBar"];
+            this.statusProgressBar = (ToolStripProgressBar)controls["statusProgressBar"];
         }
 
         public void SetNumber(int number)
