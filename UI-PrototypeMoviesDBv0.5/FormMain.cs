@@ -14,15 +14,15 @@ namespace UI_PrototypeMoviesDBv0._5
             InitializeComponent();
 
             var controls = new Dictionary<string, Object>();
-            controls.Add("", buttonStart);
-            controls.Add("", buttonSettings);
-            controls.Add("", comboBoxModule);
-            controls.Add("", textBox);
-            controls.Add("", statusLabelStopWatch);
-            controls.Add("", statusLabelTask);
-            controls.Add("", statusProgressBar);
-            controls.Add("", statusLabelPercent);
-            controls.Add("", statusLabelInfo);
+            controls.Add("buttonStart", buttonStart);
+            controls.Add("buttonSettings", buttonSettings);
+            controls.Add("comboBoxModule", comboBoxModule);
+            controls.Add("textBox", textBox);
+            controls.Add("statusLabelStopWatch", statusLabelStopWatch);
+            controls.Add("statusLabelTask", statusLabelTask);
+            controls.Add("statusProgressBar", statusProgressBar);
+            controls.Add("statusLabelPercent", statusLabelPercent);
+            controls.Add("statusLabelInfo", statusLabelInfo);
 
             worker = new Worker(controls);
             worker.CreateControl();
