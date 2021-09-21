@@ -44,7 +44,7 @@ namespace UI_PrototypeMoviesDBv0._5
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.statusLabelStopWatch = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusLabelTask = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
+            this.statusProgressBar = new System.Windows.Forms.ToolStripProgressBar();
             this.statusLabelPercent = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusLabelInfo = new System.Windows.Forms.ToolStripStatusLabel();
             this.menuStrip.SuspendLayout();
@@ -201,7 +201,7 @@ namespace UI_PrototypeMoviesDBv0._5
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.statusLabelStopWatch,
             this.statusLabelTask,
-            this.toolStripProgressBar1,
+            this.statusProgressBar,
             this.statusLabelPercent,
             this.statusLabelInfo});
             this.statusStrip.Location = new System.Drawing.Point(0, 477);
@@ -234,11 +234,11 @@ namespace UI_PrototypeMoviesDBv0._5
             this.statusLabelTask.Text = "XXX.XXX of XXX.XXX";
             this.statusLabelTask.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // toolStripProgressBar1
+            // statusProgressBar
             // 
-            this.toolStripProgressBar1.AutoSize = false;
-            this.toolStripProgressBar1.Name = "toolStripProgressBar1";
-            this.toolStripProgressBar1.Size = new System.Drawing.Size(100, 18);
+            this.statusProgressBar.AutoSize = false;
+            this.statusProgressBar.Name = "statusProgressBar";
+            this.statusProgressBar.Size = new System.Drawing.Size(100, 18);
             // 
             // statusLabelPercent
             // 
@@ -259,7 +259,7 @@ namespace UI_PrototypeMoviesDBv0._5
             | System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom)));
             this.statusLabelInfo.BorderStyle = System.Windows.Forms.Border3DStyle.Sunken;
             this.statusLabelInfo.Name = "statusLabelInfo";
-            this.statusLabelInfo.Size = new System.Drawing.Size(191, 19);
+            this.statusLabelInfo.Size = new System.Drawing.Size(160, 19);
             this.statusLabelInfo.Spring = true;
             this.statusLabelInfo.Text = "statusLabelInfo";
             this.statusLabelInfo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -311,7 +311,7 @@ namespace UI_PrototypeMoviesDBv0._5
         private System.Windows.Forms.ToolStripMenuItem infoToolStripMenuItem;
         private System.Windows.Forms.ToolStripStatusLabel statusLabelStopWatch;
         private System.Windows.Forms.ToolStripStatusLabel statusLabelTask;
-        private System.Windows.Forms.ToolStripProgressBar toolStripProgressBar1;
+        private System.Windows.Forms.ToolStripProgressBar statusProgressBar;
         private System.Windows.Forms.ToolStripStatusLabel statusLabelPercent;
         private System.Windows.Forms.ToolStripStatusLabel statusLabelInfo;
     }
